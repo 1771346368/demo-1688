@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  :global {
+    .content {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      padding: 2rem 0.8rem;
+    }
+    .title {
+      font-size: 2rem;
+      margin-bottom: 1.375rem;
+      font-weight: bold;
+    }
+    .coupon-item-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      min-height: 10rem;
+      margin-bottom: 1.375rem;
+      background-image: url('../../../public/coupon_bg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .money-container {
+      display: flex;
+      width: 25%;
+      padding: 2rem 1.75rem;
+      color: #a45927;
+      font-size: 4.25rem;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+      .money-content {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 4px;
+        .money-small {
+          width: 20%;
+          font-size: 1.75rem;
+          font-weight: normal;
+        }
+      }
+    }
+    .coupon-content-container {
+      width: 75%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+      .coupon-content-container-left {
+        width: 70%;
+        color: #ffe9b0;
+        .coupon-content-title {
+          font-size: 2.25rem;
+          margin-bottom: 0.5rem;
+        }
+        .coupon-content-description {
+          font-size: 1.375rem;
+          margin-bottom: 1rem;
+        }
+      }
+      .coupon-content-container-right {
+        width: 30%;
+        .coupon-content-button {
+          width: 9.125rem;
+          height: 4rem;
+          line-height: 4rem;
+          text-align: center;
+          color: #a45927;
+          font-size: 2.25rem;
+          font-weight: bold;
+          background: linear-gradient(90deg, #ffe2bc, #fed789);
+          border-radius: 999rem;
+        }
+      }
+    }
+  }
+}
